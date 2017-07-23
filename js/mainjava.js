@@ -1,5 +1,4 @@
-alert("hola");
-/*$(document).ready(function(){
+$(document).ready(function(){
     $('#carousel').carousel({
       interval: 4000, //sirve para regular la velocidad del slider.   
     });
@@ -10,16 +9,7 @@ alert("hola");
     });
     $(".box1").click(function(){
         $("#carousel").carousel(1);
-    });
-    $(".box2").click(function(){
-        $("#carousel").carousel(2);
-    });
-    $(".box3").click(function(){
-        $("#carousel").carousel(3);
-    }); 
-    $(".box4").click(function(){
-        $("#carousel").carousel(4);
-    }); 
+    });     
 
   // Funcionamiento de los Controles
     $(".left").click(function(){
@@ -28,5 +18,14 @@ alert("hola");
     $(".right").click(function(){
         $("#carousel").carousel("next");
     });
-  
+
+    $(window).scroll(function(){
+        scroll = $window.scrollTop();
+
+        if(scroll > 100){
+            $("#navbar").css({"background-color":"white", "color":"black"});
+        }else{
+            $("#navbar").css({"background-color":"transparent", "color":"white"});
+        }
+    }) 
 })
