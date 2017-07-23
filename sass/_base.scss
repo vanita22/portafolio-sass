@@ -253,15 +253,6 @@ body{
 				font-size: 14px;
 				font-weight: bold;
 			}
-
-			/*@keyframes imagenes{
-				0%{
-					transform: rotateY(90deg);
-				}
-				100%{
-					transform: rotateY(0);
-				}
-			}*/
 			.caja11{
 				display: inline-flex;
 				h5{
@@ -678,7 +669,7 @@ body{
 	color: $color_blanco;
 	.caja4{
 		background-color: rgba(0,0,0,0.7);
-		width: 90%;
+		width: 100%;
 		height: auto;
 		padding: 30px;
 	}
