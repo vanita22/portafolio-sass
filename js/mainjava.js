@@ -1,4 +1,5 @@
-$(document).ready(function(){
+alert("hola");
+/*$(document).ready(function(){
     $('#carousel').carousel({
       interval: 4000, //sirve para regular la velocidad del slider.   
     });

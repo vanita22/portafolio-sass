@@ -5,9 +5,10 @@
 	<title>Portafolio Sass</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">	
 </head>
 
@@ -15,25 +16,52 @@
 	<!-- navbar -->
 	<header>
 		<nav class="navbar navbar-fixed-top">
-			<nav class="navbar navbar-default">
+			<nav class="navbar">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i>
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Hestia Pro</a>
+						<div class="logo"><a class="navbar-brand" href="#"><img src="img/logo_new.png">Hestia Pro</a></div>
 					</div>
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Sections</a></li>
-							<li><a href="#">Shop</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Buy Now</a></li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-cloud" aria-hidden="true"></i>Features<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>1 minute setup</a></li>
+									<li><a href="#"><i class="fa fa-rocket" aria-hidden="true"></i>Fast updates & suports</a></li>
+									<li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i>Live customizer</a></li>
+									<li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i>Video tutorials</a></li>
+									<li><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>Custom backgrounds</a></li>
+									<li><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i>Responsive design</a></li>
+									<li><a href="#"><i class="fa fa-fast-forward" aria-hidden="true"></i>Optimidez for speed</a></li>
+									<li><a href="#"><i class="fa fa-flag" aria-hidden="true"></i>Translation & RTL ready</a></li>
+									<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>SEO optimized</a></li>
+									<li><a href="#"><i class="fa fa-arrows" aria-hidden="true"></i>Drag-and-Drop builder</a></li>
+									<li><a href="#"><i class="fa fa-money" aria-hidden="true"></i>Woocommerce ready</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-sort" aria-hidden="true"></i>Sections<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>Features</a></li>
+									<li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a></li>
+									<li><a href="#"><i class="fa fa-users" aria-hidden="true"></i>Our team</a></li>
+									<li><a href="#"><i class="fa fa-usd" aria-hidden="true"></i>Price</a></li>
+									<li><a href="#"><i class="fa fa-address-card" aria-hidden="true"></i>Testimonials</a></li>
+									<li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Subscribe</a></li>
+									<li><a href="#"><i class="fa fa-clipboard" aria-hidden="true"></i>Blog</a></li>
+									<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
+								</ul>
+							</li>
+							<li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Shop</a></li>
+							<li><a href="#"><i class="fa fa-camera-retro" aria-hidden="true"></i>Blog</a></li>
+							<li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a></li>
+							<li><span class="btn"><i class="fa fa-cart-plus" aria-hidden="true"></i>Buy Now</span></li>
 						</ul>
 					</div>
 				</div>
@@ -42,69 +70,79 @@
 	</header>
 
 	<!-- box a -->
-	<section class="box">
-		div class="container">
-		<div class="row">
-			<div class="col-xs-sm-md-lg-12">
-				<div id="carousel" class="carousel slide">
-  					<!-- Indicatores -->
-  					<ol class="carousel-indicators">
-    					<li class="active box"></li>
-    					<li class="box1"></li>    					
-  					</ol>
+	<section>
+		<div class="container box">
+			<div class="row">
+				<div class="col-xs-sm-md-lg-12">
+					<div id="carousel" class="carousel slide">
+  						<!-- Indicatores -->
+  						<ol class="carousel-indicators">
+    						<li class="active box"></li>
+    						<li class="box1"></li>    					
+  						</ol>
 
-  					<!--  Imagenes de los slides -->
-  					<div class="carousel-inner" role="listbox">
-					    <div class="item active">
-					      <img src="" class="img-responsive" alt="Responsive image" width="100%">	     
-					    </div>    					
+  						<!--  Imagenes de los slides -->
+  						<div class="carousel-inner" role="listbox">
+					    	<div class="item active">
+					      		<img src="img/img_slider_2.jpg" class="img-responsive" alt="Responsive image">
+					      		<div class="carousel-caption hidden-xs hidden-sm">
+					      			<h1>Slick Material Design</h1> 
+      								<h4>Beautiful, Elegantly Coded</h4><br> 
+      								<span class="btn">SEE MORE</span>
+      							</div>	     
+					    	</div>    					
     				
-    					<div class="item">
-        					<img src="" class="img-responsive" alt="Responsive image" width="100%">
+    						<div class="item">
+        						<img src="img/img_slider_1.jpg" class="img-responsive" alt="Responsive image">
+        						<div class="carousel-caption hidden-xs hidden-sm">
+        							<h1>Slick Material Design</h1> 
+      								<h4>Beautiful, Elegantly Coded</h4><br>  
+      								<span class="btn">SEE MORE</span>
+      							</div>
+      						</div>      										
       					</div>   
-      					<h1>Slick Material Design</h1> 
-      					<h4>Beautiful, Elegantly Coded</h4>  
-      					<span>SEE MORE</span>					
-      				</div>   
 
-  					<!-- Controles -->
-  					<a class="left carousel-control" href="#carousel" role="button">
-    					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    					<span class="sr-only">Previous</span>
-  					</a>
-  					<a class="right carousel-control" href="#carousel" role="button">
-    					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    					<span class="sr-only">Next</span>
-  					</a>
+  						<!-- Controles -->
+  						<a class="left carousel-control" href="#carousel" role="button">
+    						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    						<span class="sr-only">Previous</span>
+  						</a>
+  						<a class="right carousel-control" href="#carousel" role="button">
+    						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    						<span class="sr-only">Next</span>
+  						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</section>
-
 	<!-- box b -->
-	<section class="box-1">
-		<div class="container">
+	<section>
+		<div class="container" id="box-1">
 			<div class="row">
 				<div class="col-xs-sm-md-lg-12">
-					<h4>Nullam blandit gravida viverra. Etiam turpis erat, sagittis sit amet felis non, porta porta justo. Integer ornare nibh nulla, id pulvinar metus cursus semper. Vivamus dictum pellentesque mi. Vivamus ipsum tellus, mattis non ex sed, semper sodales ligula. Vivamus luctus lorem.</h4>					
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
-					<h4>Responsive</h4>
-					<h5>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-				</div>
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
-					<h4>Quality</h4>
-					<h5>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
-				</div>
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
-					<h4>Support</h4>
-					<h5>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+					<div class="row" id="box-a">
+						<div class="col-xs-sm-md-lg-12" align="center">
+							<h4>Nullam blandit gravida viverra. Etiam turpis erat, sagittis sit amet felis non, porta porta justo. Integer ornare nibh nulla, id pulvinar metus cursus semper. Vivamus dictum pellentesque mi. Vivamus ipsum tellus, mattis non ex sed, semper sodales ligula. Vivamus luctus lorem.</h4>					
+						</div>
+					</div>
+					<div class="row" id="box-b">
+						<div class="col-xs-sm-12 col-md-lg-4 minica" align="center">
+							<span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+							<h4>Responsive</h4>
+							<p>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="col-xs-sm-12 col-md-lg-4 minica2" align="center">
+							<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+							<h4>Quality</h4>
+							<p>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="col-xs-sm-12 col-md-lg-4 minica3" align="center">
+							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+							<h4>Support</h4>
+							<p>Lorem ipsum dolor sit amet elit do, consectetur adipiscing, sed eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -112,217 +150,275 @@
 
 	<!-- box c -->
 	<section class="box-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-sm-md-lg-6">
-					<h2>Who are we now</h2>
-					<h4>Ideate integrate food-truck agile ideate thinker-maker-doer user story intuitive hacker integrate workflow Steve Jobs. Steve Jobs pair programming food-truck big data long shadow SpaceTeam agile agile affordances.
+		<div class="container" id="capa">
+			<div class="row" id="box-c">
+				<div class="col-xs-sm-md-lg-6" id="box-d" align="left">
+					<h2>Who are we now</h2><br>
+					<p>Ideate integrate food-truck agile ideate thinker-maker-doer user story intuitive hacker integrate workflow Steve Jobs. Steve Jobs pair programming food-truck big data long shadow SpaceTeam agile agile affordances.<br><br>
 
-					User centered design food-truck experiential minimum viable product human-centered design prototype viral quantitative vs. qualitative.</h4>
+					User centered design food-truck experiential minimum viable product human-centered design prototype viral quantitative vs. qualitative.</p>
 				</div>
 				<div class="col-xs-sm-md-lg-6">
-					<img src="">
+					<img src="img/img_tablet.png">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" align="center">
 				<div class="col-xs-sm-md-lg-12">
-					<iframe src=""></iframe>
+					<iframe src="https://www.youtube.com/embed/pYOJNOJfJxU?ecver=2" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- box d -->
-	<section class="box-3">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-sm-md-lg-12">
+	<section>
+		<div class="container box-3">			
+			<div class="row" id="box-e">
+				<div class="col-xs-sm-md-lg-12" align="center">
 					<h2>Products</h2>
-					<h4>Showcase your products in this beautiful shop section.</h4>					
+					<p>Showcase your products in this beautiful shop section.</p>					
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-3">
-					<img src="">
+			<div class="row" id="box-f">
+				<div class="col-xs-sm-12 col-md-lg-3" id="blanco" align="center">
+					<img src="img/img_product_1.png" class="img-responsive" width="200">
 					<h4>FASHION</h4>
 					<h3>Embroidered Dress</h3>	
-					<h4>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties.</h4>
-					<h4>£100.00</h4><i></i>			
+					<p>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties.</p>
+					<div class="caja11"><h5>£100.00</h5><i class="fa fa-cart-plus" aria-hidden="true"></i></div>			
 				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-3">
-					<img src="">
+			
+				<div class="col-xs-sm-12 col-md-lg-3" id="blanco" align="center">
+					<img src="img/img_product_2.png" class="img-responsive" width="150">
 					<h4>POPULAR</h4>
 					<h3>Printed Blue T-Shirt</h3>	
-					<h4>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold.</h4>
-					<h4>£35.00</h4><i></i>			
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-3">
-					<img src="">
+					<p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold.</p>
+					<div class="caja11"><h5>£35.00</h5><i class="fa fa-cart-plus" aria-hidden="true"></i></div>			
+				</div>	
+			
+				<div class="col-xs-sm-12 col-md-lg-3" id="blanco" align="center">
+					<img src="img/img_product_3.png" class="img-responsive" width="150">
 					<h4>TRENDING</h4>
 					<h3>Embroidered Blouse</h3>	
-					<h4>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties.</h4>
-					<h4>£45.00</h4><i></i>			
+					<p>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties.</p>
+					<div class="caja11"><h5>£45.00</h5><i class="fa fa-cart-plus" aria-hidden="true"></i></div>			
 				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-3">
-					<img src="">
+			
+				<div class="col-xs-sm-12 col-md-lg-3" id="blanco" align="center">
+					<img src="img/img_product_4.jpg" class="img-responsive" width="150">
 					<h4>FASHION</h4>
 					<h3>Trucker Jacket</h3>	
-					<h4>So delightful up dissimilar by unreserved it connection frequently. Do an high room so in paid up on.</h4>
-					<h4>£110.00</h4><i></i>			
+					<p>So delightful up dissimilar by unreserved it connection frequently. Do an higroom so in paid up on.</p>
+					<div class="caja11"><h5>£110.00</h5><i class="fa fa-cart-plus" aria-hidden="true"></i></div>			
 				</div>
-			</div>
+			</div>							
 		</div>
 	</section>
 
 	<!-- box e -->
-	<section class="box-4">
-		<div class="container">
+	<section>
+		<div class="container box-4">
 			<div class="row">
-				<div class="col-xs-sm-md-lg-12">
+				<div class="col-xs-sm-md-lg-12" align="center">
 					<h2>Portfolio</h2>
-					<h4>Showcase your work effectively and in an attractive form that your prospective clients will love.</h4>	
+					<p>Showcase your work effectively and in an attractive form that your prospective clients will love.</p>	
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row port-1">
 				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+					<img src="img/img_portafolio_1.jpg" class="img-responsive">
+					<div class="palabras" align="center">
+						<span class="btn">PRODUCTIVITY</span><br><br>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
 				</div>
 
 				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+					<img src="img/img_portafolio_2.jpg" class="img-responsive">
+					<div class="palabras" align="center">
+						<span class="btn">PRODUCTIVITY</span><br><br>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
 				</div>
 
 				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+					<img src="img/img_portafolio_3.jpg" class="img-responsive">
+					<div class="palabras" align="center">
+						<span class="btn">PRODUCTIVITY</span><br><br>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row port-2">
 				<div class="col-xs-sm-12 col-md-lg-6">
-					<img src="">
+					<img src="img/img_portafolio_4.jpg" class="img-responsive">
+					<div class="palabras" align="center">
+						<span class="btn">PRODUCTIVITY</span><br><br>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
 				</div>
 
 				<div class="col-xs-sm-12 col-md-lg-6">
-					<img src="">
+					<img src="img/img_portafolio_5.jpg" class="img-responsive">
+					<div class="palabras" align="center">
+						<span class="btn">PRODUCTIVITY</span><br><br>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row port-3">
 				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+					<img src="img/img_portafolio_6.jpg" class="img-responsive">
+					<div class="palabras" align="center">
+						<span class="btn">PRODUCTIVITY</span><br><br>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
 				</div>
 
 				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+					<img src="img/img_portafolio_7.jpg" class="img-responsive">
+					<div class="palabras" align="center">
+						<span class="btn">PRODUCTIVITY</span><br><br>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
 				</div>
 
 				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+					<img src="img/img_portafolio_8.jpg" class="img-responsive">
+					<div class="palabras" align="center">
+						<span class="btn">PRODUCTIVITY</span><br><br>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- box f -->
-	<section class="box-5">
-		<div class="container">
+	<section>
+		<div class="container box-5"align="center">
 			<div class="row">
 				<div class="col-xs-sm-md-lg-12">
-					<h2>Meet our team</h2>
-					<h4>Prove that you have real people working for you, with some nice looking profile pictures and links to social media.</h4>
+					<h2>Meet our team</h2><br>
+					<p>Prove that you have real people working for you, with some nice looking profile pictures and links to social media.</p>
 				</div>
 			</div>
 
-			<div class="row"><!--hacer con media -->
-				<div class="col-xs-sm-12 col-md-lg-6">
-					<img src="">
-					<h4>Desmond Purpleson</h4>
-					<h5>CEO</h5>
-					<h4>Locavore pinterest chambray affogato art party, forage coloring book typewriter. Bitters cold selfies, retro celiac sartorial mustache.</h4>
-					<i></i>
-					<i></i>
-					<i></i>
-					<i></i>
+			<div class="row">
+				<div class="col-xs-sm-md-lg-12 med-a">
+					<div class="media">
+  						<div class="media-left">    						
+      						<img class="media-object" src="img/img_team_1.jpg" alt="" width="200" height="200"> 						
+  						</div>
+  						<div class="media-body" align="left">
+    						<h4 class="media-heading">Desmond Purpleson</h4>
+    						<h5>CEO</h5>
+							<p>Locavore pinterest chambray affogato art party, forage coloring book typewriter. Bitters cold selfies, retro celiac sartorial mustache.</p>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+  						</div>
+					</div>					
+				
+					<div class="media">
+  						<div class="media-left">    						
+      						<img class="media-object" src="img/img_team_2.jpg" alt="" width="200" height="200"> 						
+  						</div>
+  						<div class="media-body" align="left">
+    						<h4 class="media-heading">Parsley Pepperspray</h4>
+    						<h5>GRAPHIC DESIGNER</h5>
+							<p>Craft beer salvia celiac mlkshk. Pinterest celiac tumblr, portland salvia skateboard cliche thundercats. Tattooed chia austin hell.</p>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+  						</div>
+					</div>
 				</div>
 
-				<div class="col-xs-sm-12 col-md-lg-6">
-					<img src="">
-					<h4>Parsley Pepperspray</h4>
-					<h5>MARKETING SPECIALIST</h5>
-					<h4>Craft beer salvia celiac mlkshk. Pinterest celiac tumblr, portland salvia skateboard cliche thundercats. Tattooed chia austin hell.</h4>
-					<i></i>
-					<i></i>
-					<i></i>
-					<i></i>
-				</div>
-
-				<div class="col-xs-sm-12 col-md-lg-6">
-					<img src="">
-					<h4>Desmond Eagle</h4>
-					<h5>GRAPHIC DESIGNER</h5>
-					<h4>Pok pok direct trade godard street art, poutine fam typewriter food truck narwhal kombucha wolf cardigan butcher whatever pickled you.</h4>
-					<i></i>
-					<i></i>
-					<i></i>
-					<i></i>
-				</div>
-
-				<div class="col-xs-sm-12 col-md-lg-6">
-					<img src="">
-					<h4>Ruby Von Rails</h4>
-					<h5>LEAD DEVELOPER</h5>
-					<h4>Small batch vexillologist 90's blue bottle stumptown bespoke. Pok pok tilde fixie chartreuse, VHS gluten-free selfies wolf hot.</h4>
-					<i></i>
-					<i></i>
-					<i></i>
-					<i></i>
-				</div>
+				<div class="col-xs-sm-md-lg-12 med-b">
+					<div class="media">
+  						<div class="media-left">    						
+      						<img class="media-object" src="img/img_team_3.jpg" alt="" width="200" height="200"> 						
+  						</div>
+  						<div class="media-body" align="left">
+    						<h4 class="media-heading">Desmond Eagle</h4>
+    						<h5>GRAPHIC DESIGNER</h5>
+							<p>Pok pok direct trade godard street art, poutine fam typewriter food truck narwhal kombucha wolf cardigan butcher whatever pickled you.</p>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+  						</div>
+					</div>					
+				
+					<div class="media">
+  						<div class="media-left">    						
+      						<img class="media-object" src="img/img_team_4.jpg" alt="" width="200" height="200"> 						
+  						</div>
+  						<div class="media-body" align="left">
+    						<h4 class="media-heading">Ruby Von Rails</h4>
+    						<h5>LEAD DEVELOPER</h5>
+							<p>Small batch vexillologist 90's blue bottle stumptown bespoke. Pok pok tilde fixie chartreuse, VHS gluten-free selfies wolf hot.</p>
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+  						</div>
+  					</div>					
+				</div>				
 			</div>
 		</div>
 	</section>
 
 	<!-- box g -->
-	<section class="box-6">
-		<div class="container">
+	<section>
+		<div class="container box-6">
 			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-6">
-					<h2>Choose a plan for your next project</h2>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+				<div class="col-xs-sm-12 col-md-lg-4 caja" align="left">
+					<h2>Choose a plan for your next project</h2><br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 				</div>
 
-				<div class="col-xs-sm-12 col-md-lg-3">
+				<div class="col-xs-sm-12 col-md-lg-4 caja2" align="center">
 					<h4>TREASURE CHEST LITE</h4>
-					<h4>$</h4><h2>89</h2><h3>/ year</h3>
-					<h4>Access to Hestia Pro</h4>
-					<h4>Access to All 20+ Themes</h4>
+					<div class="valor"><h4><br>$</h4><h2>89</h2><h4><br><br>/ year</h4></div>
+					<h4>Access to <p>Hestia Pro</p></h4>
+					<hr>
+					<h4>Access to All <p>20+ Themes</p></h4>
+					<hr>
 					<h4>WordPress Video Tutorials</h4>
-					<h4>3 Domains License</h4>
+					<hr>
+					<h4><p>3</p> Domains License</h4>
+					<hr>
 					<h4>1 Year Free Shared Hosting</h4>
-					<h4>12 Months Support & Updates</h4>
-					<span>BUY NOW</span>
+					<hr>
+					<h4><p>12</p> Months Support & Updates</h4>
+					<br>
+					<span class="btn">BUY NOW</span>
 				</div>
 
-				<div class="col-xs-sm-12 col-md-lg-3">
+				<div class="col-xs-sm-12 col-md-lg-4 caja3" align="center">
 					<h4>PIRATE CLUB</h4>
-					<h4>$</h4><h2>249</h2>
-					<h4>Access to Hestia Pro</h4>
-					<h4>Access to All 20+ Themes</h4>
+					<div class="valor"><h4><br>$</h4><h2>249</h2></div>
+					<h4>Access to <p>Hestia Pro</p></h4>
+					<hr>
+					<h4>Access to All <p>20+ Themes</p></h4>
+					<hr>
 					<h4>WordPress Video Tutorials</h4>
-					<h4>10 Domains License</h4>
+					<hr>
+					<h4><p>10</p> Domains License</h4>
+					<hr>
 					<h4>1 Year Free Shared Hosting</h4>
-					<h4>Lifetime Support & Updates</h4>
-					<span>BUY NOW</span>
+					<hr>
+					<h4><p>Lifetime</p> Support & Updates</h4>
+					<br>
+					<span class="btn">BUY NOW</span>
 				</div>
 			</div>
 		</div>
@@ -331,30 +427,30 @@
 	<!-- box h -->
 	<section class="box-7">
 		<div class="container">
-			<div class="row">
+			<div class="row box-g" align="center">
 				<div class="col-xs-sm-md-lg-12">
 					<h2>Our Clients Love Us</h2>
 					<p>You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</p>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+			<div class="row box-h">
+				<div class="col-xs-sm-12 col-md-lg-4" align="center">
+					<img src="img/img_client_1.jpg" class="img-circle" width="100" height="100">
 					<h4>Inverness McKenzie</h4>
 					<h5>BUSINESS OWNER</h5>
 					<p>"We have no regrets! After using your product my business skyrocketed! I made back the purchase price in just 48 hours! I couldn't have asked for more than this."</p>
 				</div>
 
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+				<div class="col-xs-sm-12 col-md-lg-4" align="center">
+					<img src="img/img_client_2.jpg" class="img-circle" width="100" height="100">
 					<h4>Hanson Deck</h4>
 					<h5>INDEPENDENT ARTIST</h5>
 					<p>"Your company is truly upstanding and is behind its product 100 percent. Hestia is worth much more than I paid. I like Hestia more each day because it makes easier."</p>
 				</div>
 
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+				<div class="col-xs-sm-12 col-md-lg-4" align="center">
+					<img src="img/img_client_3.jpg" class="img-circle" width="100" height="100">
 					<h4>Natalya Undergrowth</h4>
 					<h5>FREELANCER</h5>
 					<p>"Thank you for making it painless, pleasant and most of all hassle free! I am so pleased with this product. Dude, your stuff is great! I will refer everyone I know."</p>
@@ -364,14 +460,14 @@
 	</section>
 
 	<!-- box i -->
-	<section class="box-8">
-		<div class="container">
+	<section>
+		<div class="container box-8">
 			<div class="row">
-				<div class="col-xs-sm-md-lg-12">
-					<h1>Subscribe to our Newsletter</h1>
+				<div class="col-xs-sm-md-lg-12 caja4" align="center">
+					<h1>Subscribe to our Newsletter</h1><br>
 					<h4>Receive updates instantly</h4>
 					<div class="correo">
-							<i></i><input type="" name=""><span>SUBSCRIBE</span>
+						<i class="fa fa-envelope" aria-hidden="true"></i><input type="text" name="correo" placeholder="Your Email Here"><span class="btn">SUBSCRIBE</span>
 					</div>
 				</div>
 			</div>
@@ -382,29 +478,29 @@
 	<section class="box-9">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-sm-md-lg-12">
-					<h2>Blog</h2>
-					<p>Check out our latest news</p>
+				<div class="col-xs-sm-md-lg-12" align="center">
+					<h2>Blog</h2><br>
+					<p>Check out our latest news</p><br><br>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+			<div class="row box-i">
+				<div class="col-xs-sm-12 col-md-lg-4 box-j" align="left">
+					<img src="img/img_block_1.jpg" class="img-responsive" width="350" height="350">
 					<h5>APPEARANCE</h5>
 					<h4>Perfectly on furniture</h4>
 					<p>Feet evil to hold long he open knew an no. Apartments occasional boisterous as solicitude to introduced. Or fifteen covered we enjoyed demesne is in prepare. In stimulated my everything it literature. Greatly explain attempt Read more…</p>
 				</div>
 
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+				<div class="col-xs-sm-12 col-md-lg-4 box-k" align="left">
+					<img src="img/img_block_2.jpg" class="img-responsive" width="350" height="350">
 					<h5>APPEARANCE</h5>
 					<h4>Fat son how smiling natural</h4>
 					<p>To shewing another demands sentiments. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on. In views it or meant drift to. Be concern parlors settled or do shyness address.  He always Read more…</p>
 				</div>
 
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<img src="">
+				<div class="col-xs-sm-12 col-md-lg-4 box-l" align="left">
+					<img src="img/img_block_3.jpg" class="img-responsive" width="350" height="350">
 					<h5>APPEARANCE</h5>
 					<h4>Admiration prosperous now</h4>
 					<p>"Extremity direction existence as dashwoods do up. Securing marianne led welcomed offended but offering six raptures. Conveying do newspaper rapturous oh at. Two indeed suffer saw beyond far former mrs remain. Occasional continuing possession we Read more…"</p>
@@ -414,27 +510,23 @@
 	</section>
 
 	<!-- box k -->
-	<section class="box-10">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-6">
-					<h1>Get in Touch</h1>
-					<h4>You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</h4>
-					<i></i><h4>Find us at the office</h4>
-					<p>Bld Mihail Kogalniceanu, nr. 8,
-					7652 Bucharest,
-					Romania</p><br>
-					<i></i><h4>Give us a ring</h4>
-					<p>Michael Jordan
-					+40 762 321 762
-					Mon - Fri, 8:00-22:00</p>
+	<section>
+		<div class="container box-10">
+			<div class="row box-m">
+				<div class="col-xs-sm-12 col-md-lg-6" id="caja5">
+					<h1>Get in Touch</h1><br>
+					<h4>You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</h4><br><br>
+					<div class="caj"><i class="fa fa-map-marker" aria-hidden="true"></i><h4>Find us at the office</h4></div><br><br>
+					<p>  Bld Mihail Kogalniceanu, nr. 8,<br>7652 Bucharest,<br>Romania</p><br><br>
+					<div class="caj"><i class="fa fa-mobile" aria-hidden="true"></i><h4>Give us a ring</h4></div><br><br>
+					<p>  Michael Jordan<br>+40 762 321 762<br>Mon - Fri, 8:00-22:00</p>
 				</div>
-				<div class="col-xs-sm-12 col-md-lg-6">
-					<h4>Contact Us</h4>
-					<input type="" name="" placeholder="Your Name"><input type="" name="" placeholder="Your Email">
-					<input type="" name="" placeholder="Subject">
-					<input type="" name="" placeholder="Your Message">
-					<span>SEND MESSAGE</span>
+				<div class="col-xs-sm-12 col-md-lg-6" id="caja6">
+					<h4>Contact Us</h4><br>
+					<div class="caj2"><input type="text" name="" placeholder="Your Name" width="200"><input type="text" name="" placeholder="Your Email" width="200"></div><br>
+					<input type="text" name="" placeholder="Subject" width="400"><br>
+					<input type="text" name="" placeholder="Your Message" id="mensaje"><br><br>
+					<span class="btn">SEND MESSAGE</span>
 				</div>
 			</div>			
 		</div>
@@ -443,31 +535,31 @@
 	<!-- footer -->
 	<footer>
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<h4>About us</h4>
-					<p>Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed although do blessing he juvenile in.
+			<div class="row" id="box-11">
+				<div class="col-xs-sm-12 col-md-lg-4 caja7">
+					<h4>About us</h4><br>
+					<p>Inhabit hearing perhaps on ye do no. It maids decay as there he. Smallest on suitable disposed although do blessing he juvenile in.<br><br>
 
 					Society excited forbade. Here name off yet she long sold easy. Differed oh cheerful procured pleasure securing suitable. Hold rich on an he oh fine. Chapter ability shyness article welcome be do on service.</p>
 				</div>
 
-				<div class="col-xs-sm-12 col-md-lg-4">
-					<h4>Social Media Feed</h4>					
-					<i></i><p>What's New in Hestia - Our Flagship Product HTTPS://T.CO/LSLFRTYPZX</p>
-					<i></i><p>Our Hestia Facebook Group has reached 169 members & counting HTTPS://WWW.FACEBOOK.COM/GROUPS/2024469201114053</p>
-					<i></i><p>Great example of our #WORDPRESS theme Hestia HTTPS://WWW.JELLESCHUURMAN.NL</p>					
+				<div class="col-xs-sm-12 col-md-lg-4 caja8">
+					<h4>Social Media Feed</h4><br>					
+					<div class="caj1"><i class="fa fa-twitter" aria-hidden="true"></i><p>What's New in Hestia - Our Flagship Product HTTPS://T.CO/LSLFRTYPZX</p></div>
+					<div class="caj1"><i class="fa fa-facebook" aria-hidden="true"></i><p>Our Hestia Facebook Group has reached 169<br> members & counting HTTPS://WWW.FACEBOOK.COM<br>/GROUPS/20244692011<br>14053</p></div>
+					<div class="caj1"><i class="fa fa-twitter" aria-hidden="true"></i><p>Great example of our #WORDPRESS theme Hestia HTTPS://WWW.JELLESCHUURMAN.NL</p></div>									
 				</div>
 
-				<div class="col-xs-sm-12 col-md-lg-4">
+				<div class="col-xs-sm-12 col-md-lg-4 caja9">
 					<h4>Instagram Feed</h4>
-					<img src=""><img src=""><img src=""><img src=""><img src=""><img src=""><img src=""><img src="">
+					<img src="img/img_instagram_1.jpg" class="img-responsive"><img src="img/img_instagram_2.jpg" class="img-responsive"><img src="img/img_instagram_3.jpg" class="img-responsive"><img src="img/img_instagram_4.jpg" class="img-responsive"><img src="img/img_instagram_5.jpg" class="img-responsive"><img src="img/img_instagram_6.jpg" class="img-responsive"><img src="img/img_instagram_7.jpg" class="img-responsive"><img src="img/img_instagram_8.jpg" class="img-responsive">
 				</div>
 			</div>
 
 			<hr>
 
 			<div class="row">
-				<div class="col-xs-sm-12 col-md-lg-6">
+				<div class="col-xs-sm-md-lg-12" id="box-12">
 					<ul>
 						<li>BLOG</li>
 						<li>PRESENTATION</li>
@@ -476,7 +568,7 @@
 						<li>CONTACT</li>
 					</ul>
 				</div>
-				<div class="col-xs-sm-12 col-md-lg-6">
+				<div class="col-xs-sm-md-lg-12 caja10" align="right">
 					<ul>
 						<li>Hestia |</li>
 						<li>Powered by<p>WordPress</p></li>
@@ -485,7 +577,8 @@
 			</div>
 		</div>
 	</footer>
-	<!-- Bootstrap Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="mainjava.js"></script>		
 </body>
 </html>

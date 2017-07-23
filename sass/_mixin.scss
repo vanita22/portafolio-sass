@@ -1,0 +1,13 @@
+@mixin base(){
+	font-family: $body_font;	
+	color: $color_blanco;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin box-base(){
+	width: 95%;
+	height: auto;
+	margin-left: 2.5%;		
+	position: relative;	
+}
