@@ -12,23 +12,121 @@ body{
 	box-shadow: 2px 2px 8px #000;
 }
 
+.inicio{
+	background-color: $background_color_e;
+	width: 100%;
+	display: inline-flex;
+	position: relative;
+	padding: 10px;
+	ul {
+		display: inline-flex;
+		list-style: none;
+		margin-right: 30%;
+		img{
+			width: 30px;
+			height: 30px;
+		}
+		li{
+			margin-right: 40px;
+			font-size: 20px;
+			color: $color_negro;
+			i{
+				margin-right: 10px;
+			}
+		}		
+	}
+	.botones{
+		margin-right: 20px;
+		cursor: pointer;
+		span{
+			margin-right: 20px;			
+		}
+		.btn2{
+				background-color: $color_celeste;
+				width: auto;
+				height: auto;
+				padding: 15px;
+				color: $color_blanco;
+				font-weight: bold;
+				box-shadow: 2px 2px 8px #000;
+			}
+	}
+}
+
+@media (max-width: 425px){
+	.inicio{		
+		width: 100%;
+		height: 10vh;
+		display: block;	
+		font-size: 10px;
+		margin-left: 20px;
+		margin-top: -80px;				
+		li{
+			visibility: hidden;
+		}
+		span.btn2{
+			visibility: hidden;
+		}
+		span.btn{
+			background-size: 50px;			
+		}
+		.close{			
+			margin-left: -270px;
+			margin-top: -40px;
+		}
+	}
+}
+
 /*menu*/
-.navbar{
-	background-color: transparent;
+#navbar{
+	background-color: $background_color_e;
+	width: 100%;
 	padding: $padding;	
-	height: auto;
-	@include base();
+	height: 10vh;
+	@include base();	
 	a{
-		color: $color_blanco;
+		color: $color_negro;
+		margin-top: -18px;
 	}
 	li a:hover{
 		background-color: $color_naranjo;
 		box-shadow: 3px 2px 4px #000;
 	}
-	.collapse{
+	.navbar-collapse{
+		width: 100%;
+		.dropdown-menu li{
+			height: auto;
+			margin-bottom: 10px;
+			margin-top: 20px;			
+		}				
 		i{
 			margin-right: 10px;
-		}		
+		}
+		.btn{
+			margin-top: -20px;
+		}
+		.abrir{
+			float: right;
+			margin-left: 40px;			
+			cursor: pointer;	
+			i{
+				font-size: 40px;
+				margin-top: -10px;
+				color: $color_grisc;
+				animation-name: open;
+				animation-duration: 2.5s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+			@keyframes open{
+				0%{
+					transform: rotate(80deg);
+				}			
+				100%{
+					transform: rotate(-50deg);
+				}
+			}
+		}				
 	}
 	.logo{
 		display: inline-flex;
@@ -37,7 +135,7 @@ body{
 			width: 30px;
 			margin-right: 5px;
 			animation-name: loro;
-			animation-duration: 3s;
+			animation-duration: 8s;
 			animation-iteration-count: infinite;
 			animation-direction: alternate;
 		}	
@@ -57,6 +155,7 @@ body{
 		}	
 	}
 }
+
 @media (max-width: 425px){
 	.navbar {
     	background-color: $background_color_e;
@@ -69,17 +168,19 @@ body{
     	.navbar-header{
 		width: 100%;
 		display: inline-flex;
-		color: $color_negro;		
-			.hamburguesa{
-				display: inline-flex;			
-			}
+		color: $color_negro;
+		padding: 10px;	
+		img{
+			margin-top: 30px;
+		}	
+		.hamburguesa{
+			display: inline-flex;						
+				.navbar-toggle span{					
+					background-color: $color_negro;
+					margin-left: 20px;
+				}		
+			}			
 		}   	 	
-	}
-}
-
-@media (max-width: 425px){
-	#navbar2 {
-    	visibility: hidden;    	 	
 	}
 }
 
@@ -216,6 +317,7 @@ body{
 		}
 	}
 }
+
 @media (max-width: 425px){
 	.box-2 {
     	display: block;
@@ -604,6 +706,11 @@ body{
 		}
 		h4{
 			font-size: 17px;
+		}
+	}
+	@media (max-width: 425px){
+		.caja2{
+    		margin-top: -300px;   	
 		}
 	}	 
 	.caja3{
